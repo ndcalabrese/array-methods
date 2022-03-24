@@ -9,17 +9,20 @@ const users = [
     {id: 3879, firstName: 'Ira', lastName: 'Bolislovitz', logins: 9, isPremiumMember: false}
 ];
 
-//1. Find a user named by name. In this case, "Jose"
-const findByFirstName = fName => users.find(user => user.firstName == fName);
+// //1. Find a user named by name. In this case, "Jose"
+// const findByFirstName = fName => users.find(user => user.firstName == fName);
 
-console.log(findByFirstName("Jose"));
+// console.log(findByFirstName("Jose"));
 
-//2. Get an array of all the premium members
-const findPremiumMembers = users.filter(user => user.isPremiumMember);
+// //2. Get an array of all the premium members
+// const findPremiumMembers = users.filter(user => user.isPremiumMember);
 
-console.log(findPremiumMembers);
+// console.log(findPremiumMembers);
 
 //3. Get an array of all the user last names
+const displayLastNames = users.map(user => "UserID " + user.id + " last name = "+ user.lastName);
+
+console.log(displayLastNames);
 
 //4. Get an array of the full names of those who logged in more than 10 times
 
