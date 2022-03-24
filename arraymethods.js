@@ -19,11 +19,14 @@ const users = [
 
 // console.log(findPremiumMembers);
 
-//3. Get an array of all the user last names
-const displayLastNames = users.map(user => "UserID " + user.id + " last name = "+ user.lastName);
+// //3. Get an array of all the user last names
+// const displayLastNames = users.map(user => "UserID " + user.id + " last name = "+ user.lastName);
 
-console.log(displayLastNames);
+// console.log(displayLastNames);
 
 //4. Get an array of the full names of those who logged in more than 10 times
+const displayFrequentUsers = users.filter(user => user.logins > 10).map(user => user.firstName + " " + user.lastName + " has logged in " + user.logins + " times.");
+
+console.log(displayFrequentUsers);
 
 //5. Get the total number of logins for the list of users
