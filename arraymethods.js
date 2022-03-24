@@ -9,7 +9,10 @@ const users = [
     {id: 3879, firstName: 'Ira', lastName: 'Bolislovitz', logins: 9, isPremiumMember: false}
 ];
 
-//Find a user named 'Jose'
+//Find a user named by name. In this case, "Jose"
+let findByFirstName = fName => users.find(user => user.firstName == fName);
+
+console.log(findByFirstName("Ira"));
 
 //Get an array of all the premium members
 
